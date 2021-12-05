@@ -32,7 +32,6 @@ die();
 $artist = '';
 $album = '';
 $track = '';
-$currentTime = '';
 
 $trackInfo = $api->getMyCurrentTrack();
 if(isset($trackInfo)) {
@@ -107,9 +106,9 @@ if(isset($trackInfo)) {
         <p class="card-text">
             <?php if($marquee) { ?>
             <span><?php echo $artist; ?></span>
-			<div class="marquee">
-				<span><?php echo $track; ?></span>
-			</div>
+		<div class="marquee">
+		    <span><?php echo $track; ?></span>
+		</div>
             <?php } else {
                 echo $artist . '<br />';
                 echo $track;

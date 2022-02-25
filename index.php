@@ -136,5 +136,3 @@ if(isset($trackInfo)) {
         window.location.href=url;
     }, 10000 );
 </script>
-
-<?php ?>
